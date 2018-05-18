@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>trivia reload</title>
+
+
+</head>
+
+<body>
+    <h1>TRIVIA RELOAD</h1>
+    <form action="/action_page.php">
+        Nombre:
+        <input type="text" name="FirstName" value=" ">
+        <br> Apellido:
+        <input type="text" name="LastName" value=" ">
+        <br>
+
+    </form>
+
+    <H2>¿Quieres Jugar?</H2>
+    <button onclick="startGame()"> si</button>
+    <p id="demo"></p>
+    <button onclick="finishGame()"> no</button>
+    <p id="demo2"></p>
+
+    <form action="prog.php" method="post" name="formu" id="formu" onsubmit="return comprobar()">
+        ¿Han egresado hombres de Laboratoria? s/n:
+        <input type="text" name="question1" value="">
+        <div id="scoreBoard">
+            <div id="rightAnswers">
+                <h2>Respuestas correctas</h2>
+                <div id="rightAnswersText">
+
+                </div>
+            </div>
+            <div id="wrongAnswers">
+                <h2>Respuestas incorrectas</h2>
+                <div id="wrongAnswersText">
+
+                </div>
+            </div>
+        </div>
